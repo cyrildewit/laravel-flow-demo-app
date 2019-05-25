@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
+        "cyrildewit/laravel-flow": "@dev",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0"
@@ -20,6 +21,15 @@
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^7.5"
+    },
+    "repositories": {
+        "dev-package": {
+            "type": "path",
+            "url": "../laravel-flow",
+            "options": {
+                "symlink": true
+            }
+        }
     },
     "config": {
         "optimize-autoloader": true,

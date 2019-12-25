@@ -84,6 +84,10 @@
                     Laravel
                 </div>
 
+                <div class="links m-b-md">
+                    <a href="{{ route('user-onboarding') }}">Create an Account!</a>
+                </div>
+
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>

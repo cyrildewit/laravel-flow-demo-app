@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use CyrildeWit\LaravelFlow\Flow;
 use CyrildeWit\LaravelFlow\Handler\HandlesFlow;
+use CyrildeWit\LaravelFlow\Handler\FlowHandlerInterface;
 use App\Flows\UserOnboarding\Stages\AcceptTerms;
 use App\Flows\UserOnboarding\Stages\FinishProcess;
 use App\Flows\UserOnboarding\Stages\AccountInformation;
 use App\Flows\UserOnboarding\Stages\PersonalInformation;
 
-class UserOnboarding extends Controller
+class UserOnboardingController extends Controller implements FlowHandlerInterface
 {
     use HandlesFlow;
 

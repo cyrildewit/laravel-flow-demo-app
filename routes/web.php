@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('onboarding/{slug?}', 'UserOnboarding@display')->name('user-onboarding');
-Route::post('onboarding/{slug}', 'UserOnboarding@process');
+Route::get('onboarding/{slug?}', 'UserOnboardingController@display')->name('user-onboarding');
+Route::post('onboarding/{slug}', 'UserOnboardingController@process');
